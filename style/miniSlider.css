@@ -1,0 +1,418 @@
+
+#content > .mini>.minislider{
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+    
+    margin: 0 5px 0 0;
+}
+#content>.mini> .minislider>.gal{
+    display: flex; 
+    width: 200%;
+    height: 100%;
+    position:relative;
+	left:0%;
+
+    flex-flow: row nowrap;
+
+}
+
+#content>.mini> .minislider>.gal>.itemes{
+    height: 100%;
+    margin-left: 10px;
+    width:25%; 
+    float: left;
+}
+#content>.mini> .minislider>.gal>.itemes>img{
+    width: 100%;
+    /* height: 100%; */
+} 
+#content>.mini> .minislider>.next{ 
+    position: absolute;
+    top:40%;
+    right:10px;
+    background: url("../img/next-prev/controls.png")no-repeat -32px 0;
+    width:32px;
+    height:32px; 
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 99;
+    background-color: #7e6969; 
+} 
+#content>.mini> .minislider>.prev{ 
+    position: absolute;
+    top:40%;
+    left: 10px;
+    background: url("../img/next-prev/controls.png") no-repeat 0 0;
+    width:32px;
+    height:32px; 
+    opacity: 0.5;
+    z-index: 99;
+     background-color: #7e6969
+} 
+#content>.mini>.minislider>.gal>.itemes>.price{
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+}
+#content>.mini>.minislider>.gal>.itemes>.off{
+    text-align: left;
+    font-size: 13px;
+    color:#979999;
+    font-weight: bold;
+}
+
+#content>.mini>.minislider>.gal>.itemes>.off>.left{
+    text-decoration: line-through;
+    float: left;
+}
+#content>.mini>.minislider>.gal>.itemes>.off>.dot{
+    float: left;
+    position: relative;
+    left:10px;
+}
+#content>.mini>.minislider>.gal>.itemes>.off>.right{
+    float: left;
+    position: relative;
+    left:30px;
+}
+/* ************************************ */
+#content>.minislider{  
+    position: relative;
+    width:100% ; 
+    height:100%;
+    overflow: hidden;
+}
+#content>.minislider>.gal{
+    display: flex;
+    flex-flow: row nowrap; 
+    width:200%;
+    height:100%;
+    position: relative;
+    left:0%
+}
+#content>.minislider>.gal>.itemes{
+    width:90%;
+    height: 100%;
+    margin: 0 3px;
+}
+#content>.minislider>.gal>.itemes > img{
+    box-shadow: 1px 1Spx 1px 1px rgba(109, 105, 105, 0.25);
+    background:rgb(223, 221, 221);
+    width:100%;
+    height:70%;
+}
+#content > .minislider>.next{ 
+    position: absolute;
+    top: 50%;
+    right:20px;
+    background: url("../img/next-prev/controls.png") no-repeat -32px 0;
+    width: 32px;
+    height: 32px; 
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 99;
+    background-color: #7e6969; 
+} 
+#content >.minislider>.prev{ 
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: url("../img/next-prev/controls.png") no-repeat 0 0;
+    width: 32px;
+    height: 32px; 
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 99;
+    background-color: #7e6969; 
+}
+#content>.minislider>.gal>.itemes>.price{
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+}
+#content>.minislider>.gal>.itemes>.off{
+    text-align: left;
+    font-size: 13px;
+    color:#979999;
+    font-weight: bold;
+}
+
+#content>.minislider>.gal>.itemes>.off>.left{
+    text-decoration: line-through;
+    float: left;
+}
+#content>.minislider>.gal>.itemes>.off>.dot{
+    float: left;
+    position: relative;
+    left:10px;
+}
+#content>.minislider>.gal>.itemes>.off>.right{
+    float: left;
+    position: relative;
+    left:30px;
+}
+
+
+
+
+
+
+
+/* ******************* Responsive ******************** */
+
+/* ***************max-width:1000px *****************/
+
+@media screen and (max-width:1000px){
+    #content > .mini>.minislider{
+        margin: 0 5px 0 0;
+    }
+
+    #content>.mini> .minislider>.gal>.itemes{
+        margin-left:8px;
+    }
+    #content>.mini> .minislider>.next{ 
+        top: 30%;
+    } 
+    #content>.mini> .minislider>.prev{ 
+        top: 30%;
+
+    } 
+    #content>.mini>.minislider>.gal>.itemes>.price{
+        font-size: 16px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off{
+        font-size: 11px;
+    }
+    
+    #content>.mini>.minislider>.gal>.itemes>.off>.dot{
+        position: relative;
+        left:10px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off>.right{
+        position: relative;
+        left:30px;
+    }
+    /* ************************ */
+    #content>.minislider{  
+        position: relative;
+        width:100% ; 
+        height:100%;
+        overflow: hidden;
+    }
+    #content>.minislider>.gal{
+        display: flex;
+        flex-flow: row nowrap; 
+        width:200%;
+        height:100%;
+        position: relative;
+        left:0%
+    }
+    #content>.minislider>.gal>.itemes{
+        width:90%;
+        height: 100%;
+        margin: 0 3px;
+    }
+    #content>.minislider>.gal>.itemes > img{
+        box-shadow: 1px 1Spx 1px 1px rgba(109, 105, 105, 0.25);
+        background:rgb(223, 221, 221);
+        width:100%;
+        height:70%;
+    }
+    #content > .minislider>.next{ 
+        position: absolute;
+        top: 50%;
+        right:15px;
+    } 
+    #content >.minislider>.prev{ 
+        position: absolute;
+        top: 50%;
+        left: 5px;
+
+    }
+    #content>.minislider>.gal>.itemes>.price{
+        font-size: 16px;
+    }
+    #content>.minislider>.gal>.itemes>.off{
+        font-size: 11px;
+    }
+
+    #content>.minislider>.gal>.itemes>.off>.dot{
+        position: relative;
+        left:10px;
+    }
+    #content>.minislider>.gal>.itemes>.off>.right{
+        position: relative;
+        left:30px;
+    }
+    
+
+}	
+/* ***************max-width:800px *****************/
+
+@media screen and (max-width:800px){
+
+    #content > .mini>.minislider{
+        /* margin-left:7px; */
+        margin: 0 5px 0 0;
+    }
+    #content>.mini> .minislider>.gal>.itemes{
+        /* margin:0 7px 0 0; */
+        margin-left:6px;
+    }
+    #content>.mini> .minislider>.next{ 
+        top: 40%;
+    } 
+    #content>.mini> .minislider>.prev{ 
+        top: 40%;
+
+    } 
+    #content>.mini>.minislider>.gal>.itemes>.price{
+        font-size: 15px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off{
+        font-size: 10px;
+    } 
+    #content>.mini>.minislider>.gal>.itemes>.off>.left{
+        text-decoration: line-through;
+        float: left;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off>.dot{
+        float: left;
+        position: relative;
+        left:10px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off>.right{
+        float: left;
+        position: relative;
+        left:30px;
+    }
+     
+    /* ************************************ */
+    #content>.minislider{  
+        position: relative;
+        width:100% ; 
+        height:100%;
+        overflow: hidden;
+    }
+    #content>.minislider>.gal{
+        display: flex;
+        flex-flow: row nowrap; 
+        width:300%;
+        height:100%;
+        position: relative;
+        left:0%
+    }
+    #content>.minislider>.gal>.itemes{
+        width:70%;
+        height: 100%;
+        margin: 0 3px;
+    }
+    #content>.minislider>.gal>.itemes > img{
+        box-shadow: 1px 1Spx 1px 1px rgba(109, 105, 105, 0.25);
+        background:rgb(223, 221, 221);
+        width:70%;
+        height:70%;
+    }
+    #content>.minislider>.gal>.itemes>.price{
+        font-size: 15px;
+    }
+    #content>.minislider>.gal>.itemes>.off{
+        font-size: 10px;
+    }
+    
+    #content>.minislider>.gal>.itemes>.off>.left{
+        text-decoration: line-through;
+        float: left;
+    }
+    #content>.minislider>.gal>.itemes>.off>.dot{
+        float: left;
+        position: relative;
+        left:10px;
+    }
+    #content>.minislider>.gal>.itemes>.off>.right{
+        float: left;
+        position: relative;
+        left:30px;
+    }
+}
+
+
+/* ***************max-width:600px *****************/
+
+@media screen and (max-width:600px){
+
+    #content>.mini> .minislider{
+        width: 100%;
+        margin: 0;
+    }
+    #content>.mini> .minislider>.gal{
+        display: flex; 
+        width: 200%;
+        height: 100%;
+        position:relative;
+        left:0%;
+    
+        flex-flow: row nowrap;
+    }
+    #content>.mini> .minislider>.gal>.itemes{
+        margin: 0 5px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.price{
+        font-size: 15px;
+    }
+    #content>.mini>.minislider>.gal>.itemes>.off{
+        font-size: 10px;
+    } 
+    #content>.mini> .minislider>.gal>.itemes>img{
+        width: 100%;
+    } 
+   
+    /* ************************************ */
+    #content>.minislider{  
+        position: relative;
+        width:100% ; 
+        height:100%;
+        overflow: hidden;
+    }
+    #content>.minislider>.gal{
+        display: flex;
+        flex-flow: row nowrap; 
+        width:300%;
+        height:100%;
+        position: relative;
+        left:0%
+    }
+    #content>.minislider>.gal>.itemes{
+        width:70%;
+        height: 100%;
+        margin: 0 3px;
+    }
+    #content>.minislider>.gal>.itemes > img{
+        box-shadow: 1px 1Spx 1px 1px rgba(109, 105, 105, 0.25);
+        background:rgb(223, 221, 221);
+        width:70%;
+        height:70%;
+    }
+    #content>.minislider>.gal>.itemes>.price{
+        font-size: 10px;
+    }
+    #content>.minislider>.gal>.itemes>.off{
+        font-size: 8px;
+    }
+    
+    #content>.minislider>.gal>.itemes>.off>.left{
+        text-decoration: line-through;
+        float: left;
+    }
+    #content>.minislider>.gal>.itemes>.off>.dot{
+        float: left;
+        position: relative;
+        left:5px
+    }
+    #content>.minislider>.gal>.itemes>.off>.right{
+        float: left;
+        position: relative;
+        left:10px;
+    }
+}

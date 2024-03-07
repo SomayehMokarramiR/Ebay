@@ -1,0 +1,406 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,Verdana,Sans-serif !important;
+    margin: 0;
+    padding: 0;  
+}
+.container{
+    width: 1340px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#goUp{
+	position:fixed;
+    bottom:10px;
+	right:10px;
+
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+	border-radius:3px;
+	background:url("../img/icons/icons8-chevron-up-50.png")  no-repeat 3px 2px ;
+	background-size: 20px;
+    background-color: #f5f0f0;
+	opacity:0;
+	transition:1s;
+}
+#goUp > a{
+	padding:15px;
+}  
+/* ****************************** HEADER ******************************** */
+#header{
+    color:#111820 ;
+
+}
+
+/* Top Header */
+#header>.top{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 0;
+    font-size: 12px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+#header>.top>.right>ul,
+#header>.top>.left>ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 60px;
+}
+#header>.top>.right>ul li,
+#header>.top>.left>ul li{
+    margin-right: 15px;
+}
+#header>.top>.right > ul > li>.alarm{
+    width: 30px;
+    height: 30px;
+}
+#header>.top>.right > ul > li > img.basket{
+    width: 30x;
+    height:30px;
+} 
+    /* center Header */
+#header>.center{
+    display: flex;
+    flex-flow: row nowrap;               
+    border-bottom: 1px solid #ccc;
+}
+#header>.center>.verticalCenter{
+   margin-top: 20px;
+ }
+
+#header>.center>div>.armEbay{
+    width: 120px;
+    height: 80px;
+    padding-left:50px;
+}
+#header>.center>.btnShop{
+    color: #555;
+    height: 43px;
+    text-align: left;
+    width: 100%; 
+    padding: 6px 0;
+    font-size: 12px;
+    margin-left: 50px;
+    position: relative;
+    right: 40px;
+}
+#header>.center>div>.inputSearch{
+    cursor: text;
+    border-width: 2px;
+    line-height: 1;
+    font-size: 14px;
+    color: #333;
+    width: 550px;
+    padding: 8px 0 8px 50px;
+    text-align: left;
+    position: relative;
+    top: 6px;
+}
+#header>.center>.btnSearch>span{
+    background-color: #3665f3;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    /* width: 300px; */
+    /* height: 30px; */
+    padding: 12px 60px;
+    margin-left: 5px;
+    position: relative;
+    top:15px;
+}
+#header>.center>.btnAdvanced{
+    font-size: 11px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #333;
+    margin-right: 15px;
+
+}
+#header>.bottom {
+    border-bottom: 1px solid #ccc;
+}
+  #header>.bottom > ul{
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around;  */
+    padding: 8px 0;
+    width: 1100px;
+
+    /* background-color: yellow; */
+  }
+#header>.bottom > ul li{
+    line-height: 16px;
+    padding: 0 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    /* background-color: rgb(140, 0, 255); */
+    width: 100%;
+}
+/* .hide{
+    display: none;
+}
+.show{
+    display: block;
+}  */
+
+
+/* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+
+    /* Top Header */
+    .container{
+        /* width:995px; */
+        width: 100%;
+    }
+    #header>.top{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 0;
+        font-size: 12px;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+    #header>.top>.right>ul,
+    #header>.top>.left>ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 30px;
+    }
+    #header>.top>.right>ul li,
+    #header>.top>.left>ul li{
+        margin-right: 5px;
+        font-size: 11px;
+        /* padding: 0 5px; */
+    }
+    #header>.top>.right > ul > li>.alarm{
+        width: 30px;
+        height: 30px;
+    }
+    #header>.top>.right > ul > li > img.basket{
+        width: 30x;
+        height:30px;
+    } 
+
+        /* center Header */
+    #header>.center{
+
+    }
+    #header>.center>.verticalCenter{
+    margin-top: 10px;
+    }
+
+    #header>.center>div>.armEbay{
+        height:70px;
+        padding-left:20px;
+    }
+    #header>.center>.btnShop{
+        padding:8px 0;
+        font-size:12px;
+        margin-left: 50px;
+        position: relative;
+        right: 45px;
+    }
+    #header>.center>div>.inputSearch{
+        font-size: 12px;
+        width: 390px;
+        padding: 8px 0 8px 50px;
+    }
+    #header>.center>.btnSearch>span{
+        font-size: 16px;
+        padding: 10px 25px;
+        margin-right: 20px;
+    }
+    #header>.center>.btnAdvanced{
+        padding: 0 5px;
+        margin-right: 15px;
+    }
+    #header>.bottom > ul{
+        width:700px;
+    }
+    #header>.bottom > ul li{
+        font-size: 11px;
+    }
+    /* #header>.bottom > ul li.hide{
+        display:none;
+    } */
+}	
+
+@media screen and (max-width:800px){
+    
+    /* Top Header */
+    .container{
+        width: 100%;
+    }
+    #header>.top{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 0;
+        font-size: 9px;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+    #header>.top>.right>ul,
+    #header>.top>.left>ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 60px;
+    }
+    #header>.top>.right>ul li,
+    #header>.top>.left>ul li{
+        margin-right: 15px;
+    }
+    #header>.top>.right > ul > li>.alarm{
+        width: 28px;
+        height:28px;
+    }
+    #header>.top>.right > ul > li > img.basket{
+        width: 29px;
+        height:28px;
+    } 
+
+    #header>.top>.right>ul,
+    #header>.top>.left>ul{
+        padding: 0 5px;
+    }
+
+    /* center Header */
+    #header>.center{
+
+    }
+    #header>.center>.verticalCenter{
+       margin-top: 10px;
+     }
+    
+    #header>.center>div>.armEbay{
+        height:70px;
+        padding-left:20px;
+    }
+    #header>.center>.btnShop{
+        padding:8px 0;
+        font-size:11px;
+        margin-left: 50px;
+        position: relative;
+        right: 45px;
+    }
+    #header>.center>div>.inputSearch{
+        font-size: 12px;
+        width: 300px;
+        padding: 8px 0 8px 5px;
+    }
+    #header>.center>.btnSearch>span{
+        font-size: 16px;
+        padding: 10px 25px;
+       margin-right: 40px;
+    }
+    #header>.center>.btnAdvanced{
+       display: none;
+    
+    }
+    #header>.bottom > ul{
+        width:100%;
+        overflow-y: hidden;
+        padding:8px 5px;
+    }
+    #header>.bottom > ul li{
+        font-size: 10px;
+       
+    }
+}
+
+@media screen and (max-width:600px){
+	 /* Top Header */
+     .container{
+        /* width: 600px; */
+        width: 100%;
+    }
+    #header>.top{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 0;
+        font-size: 9px;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+    #header>.top>.right>ul,
+    #header>.top>.left>ul{
+        padding: 0 5px;
+    }
+    #header>.top>.right>ul li,
+    #header>.top>.left>ul li{
+        margin-right: 5px;
+    }
+    #header>.top>.right > ul > li>.alarm{
+        width: 25px;
+        height: 25px;
+    }
+    #header>.top>.right > ul > li > img.basket{
+        width: 25x;
+        height:25px;
+    } 
+
+        /* center Header */
+    #header>.center{
+
+    }
+    #header>.center>.verticalCenter{
+       margin-top: 10px;
+     }
+    
+    #header>.center>div>.armEbay{
+        height:70px;
+        padding-left:5px;
+    }
+    #header>.center>.btnShop{
+        padding:11px 0;
+        font-size:10px;
+        margin-left: 50px;
+        position: relative;
+        right: 45px;
+    }
+    #header>.center>div>.inputSearch{
+        font-size: 12px;
+        width:260px;
+        padding: 8px 0 8px 10px;
+    }
+    #header>.center>.btnSearch>span{
+        font-size: 14px;
+        padding: 8px;
+       margin-right: 20px;
+       position: relative;
+       top:13px;
+    }
+    #header>.center>.btnAdvanced{
+       display: none;
+    
+    }
+    #header>.bottom > ul{
+        width:100%;
+        overflow-y: hidden;
+    }
+    #header>.bottom > ul> li{
+        font-size: 9px;
+       
+    }
+
+}
+/* *** */
+@media screen and (max-width:1200px){
+	
+
+}
+/* *** */

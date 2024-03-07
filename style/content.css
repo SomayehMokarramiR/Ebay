@@ -1,0 +1,639 @@
+
+#content > .mini{
+    height: 330px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 30px;
+}
+#content > .mini>.leftBox{
+    width:15%;
+    background-color: #FBCD25;
+    padding: 5px 10px;
+    z-index: 1;
+    margin-left: 5px;
+}
+#content >.dealsSection>.leftBox>div.leftText{
+    float:none;
+}
+#content >.dealsSection>.leftBox>div.rightText{
+    float:none;
+}
+#content > .mini>.leftBox>.text1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #191919;
+    margin: 15px 0;
+}
+#content > .mini>.leftBox>.text2{
+    font-size: .875rem;
+    cursor: pointer;
+    color: #191919;
+    margin: 25px 0;
+}
+#content > .mini>.leftBox>.btnShop{
+    color: rgb(25, 25, 25);
+    padding:10px 10px;
+    border: 1px solid #333;
+    font-size:  1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    white-space:nowrap;
+    margin: 15px 0;
+    background:url("../img/Fleshes/flesh.png") no-repeat 100% 60% ;
+    background-size: 40px;
+    box-shadow: rgb(25, 25, 25) 0px 0px 0px 0px inset;
+    transition: 0.5s;
+}
+#content > .mini>.leftBox>.btnShop:hover{
+    box-shadow: rgb(25, 25, 25) 10px 30px 30px 10px inset;
+    color: #fff;
+}
+
+/* *************************** */
+ #content >.category{
+
+    height: 330px; 
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 15px; 
+    gap:15px;
+ 
+ } 
+ #content >.Cat1{
+    margin-top: 40px;
+ 
+ }
+  #content >.category>.itemes{
+    width:150px;
+	height:100%;
+	margin:0 auto;
+  }
+ #content >.category>.itemes>img:hover{
+    border: 2px solid #d4d4d4;
+    cursor: pointer;
+ }
+ #content >.category>.itemes>img{
+   border: 2px solid transparent;
+   border-radius: 100%;
+    width: 150px;
+   height: 150px; 
+ }
+ #content >.category>.itemes>.desc:hover{
+    text-decoration:underline;
+ }
+ #content >.category>.itemes>.desc{
+    color:#fff;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: .875rem;
+    color: #191919;
+ }
+
+/* ************dealsSection************* */
+#content >.dealsSection{
+    width:60% ;
+    height: 300px;
+    display: flex;
+ }
+ 
+ #content >.dealsSection>.leftBox{
+    width: 40%;
+     border: 1px solid #ccc; 
+     border-right: none;
+  }
+ #content >.dealsSection>.leftBox>div>.first{
+   color: #b4b1b1;
+   font-size: 12px;
+   margin:15px 17px;
+}
+  #content >.dealsSection>.leftBox>div>.second{
+    margin: 15px 10px;
+}
+  #content >.dealsSection>.leftBox>div>.third{
+    color: #191919;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 17px;
+}
+#content >.dealsSection>.leftBox>div>.forth{
+    color: #b4b1b1;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 17px;
+}
+#content >.dealsSection>.leftBox>.btn{
+    border: 2px solid  #191919;
+    width: 200px;
+    color: #191919;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin:35px auto;
+    margin-bottom:0;
+    background:url("../img/Fleshes/flesh.png") no-repeat 100% 60%;
+    background-size: 40px;
+    box-shadow: rgb(25, 25, 25) 0px 0px 0px 0px inset;
+    transition: 0.5s;  
+}
+#content >.dealsSection>.leftBox>.btn:hover{
+    box-shadow: rgb(25, 25, 25) 10px 20px 20px 10px inset;
+    color: #fff;
+}
+#content >.dealsSection>.rightBox{
+    width: 60%;
+    border: 1px solid  transparent;
+    /* background-color:rgb(0, 255, 13); */
+}
+ #content >.dealsSection>.rightBox>img{
+    height: 100%;
+    width: 100%;
+}
+
+/* ********Title******* */
+
+#content>.title{
+    color: #191919;
+    font-size: 20px;
+    margin:20px 0;
+    margin-left: 10px;
+}
+#content>.title > a.sec1{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#content>.title > a.sec2{
+    font-size: 16px;
+    text-decoration: none;
+}
+#content>.title {
+    background: url("../img/Fleshes/flesh.png")  no-repeat 25% 45%;
+    background-size: 30px;
+}
+#content>.title1 {
+    background: url("../img/Fleshes/flesh.png")  no-repeat 38% 45%;
+    background-size: 30px;
+}
+#content>.title > span{
+    color: #a8a4a4;
+}
+#content>.title > a.sec1:hover{
+    text-decoration: underline;
+}
+#content>.title > a.sec2:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ******************* Responsive ******************** */
+
+@media screen and (max-width:1000px){
+    
+    /* mini */
+    #content > .mini{
+        margin-top: 26px;
+    }
+    #content > .mini>.leftBox{
+        height:70%;
+    }
+
+    #content > .mini>.leftBox>.btnShop{
+        width: 120px;
+        padding:10px 3px;
+        font-size: 0.9rem;
+        margin:0 auto;
+        background:url("../img/Fleshes/flesh.png") no-repeat 100% 60% ;
+        background-size: 30px;
+    }
+    #content > .mini>.leftBox>.text1{
+        margin: 10px 0;
+    }
+    #content > .mini>.leftBox>.text2{
+        margin: 20px 0;
+    }
+
+      /* category */
+    /* *************************** */
+    #content >.category{
+        height: 200px; 
+        gap:2px;
+    } 
+    #content >.category>.itemes{
+        width:130px;
+    }
+    #content >.category>.itemes>img{
+        width:110px;
+        height:110px; 
+    }
+    #content >.category>.itemes>.desc{
+        font-size: .750rem;
+        margin-right: 30px;
+
+    }
+    #content >.Cat1{
+        margin-top:-40px;
+     
+     }
+     /*  */
+     /* ************dealsSection************* */
+        #content >.dealsSection{
+            height: 250px;
+            width: 70%;
+            margin-left: 5px;
+        }
+        #content >.dealsSection>.leftBox>.btn{
+            width:150px;
+            font-size: 14px;
+            text-align: left;
+            padding: 10px 0 10px 4px;
+            margin:0 auto;
+            background:url("../img/Fleshes/flesh.png") no-repeat 90% 60%;
+            background-size: 35px; 
+        }
+        #content >.dealsSection>.leftBox>.btn:hover{
+            box-shadow: rgb(25, 25, 25) 10px 20px 20px 10px inset;
+            color: #fff;
+        }
+        #content >.dealsSection>.rightBox{
+            width: 60%;
+            border: 1px solid  transparent;
+            /* background-color:rgb(0, 255, 13); */
+        }
+        #content >.dealsSection>.rightBox>img{
+            height: 100%;
+            width: 100%;
+        }
+
+        /* ********Title******* */
+
+        #content>.title{
+            color: #191919;
+            font-size: 18px;
+            margin:20px 0;
+            margin-left: 10px;
+        }
+        #content>.title > a.sec1{
+            font-size: 18px;
+        }
+        #content>.title > a.sec2{
+            font-size: 15px;
+        }
+        #content>.title {
+            background: url("../img/Fleshes/flesh.png")  no-repeat 31% 45%;
+            background-size: 30px;
+        }      
+        #content>.title1 {
+            background: url("../img/Fleshes/flesh.png")  no-repeat 48% 45%;
+            background-size: 30px;
+        }
+
+}	
+
+@media screen and (max-width:800px){
+
+    /* mini */
+
+    #content > .mini{
+        height: 200px;
+        margin-top: 20px;
+    }
+    #content > .mini>.leftBox{
+        padding: 5px;
+        height: 96%;
+    }
+    #content > .mini>.leftBox>.text1{
+        font-size: 1rem;
+    }
+    #content > .mini>.leftBox>.text2{
+        font-size: .800rem;
+        margin:14px 0 16px 0;
+    }
+    #content > .mini>.leftBox>.btnShop{
+        width: 100px;
+        font-size:  0.8rem;
+        text-align: left;
+        background:url("../img/Fleshes/flesh.png") no-repeat 100% 60% ;
+        background-size: 20px;
+        background-size: 27px;
+    }  
+    
+    /* category */
+        
+    /* *************************** */
+    #content >.category{
+        height: 200px; 
+        gap:2px;
+    } 
+    #content >.category>.itemes{
+        width:120px;
+    }
+    #content >.category>.itemes>img{
+        width: 90px;
+        height:90px; 
+    }
+    #content >.category>.itemes>.desc{
+        font-size: .700rem;
+        margin-right: 30px;
+
+    }
+    #content >.Cat1{
+        margin-top:10px;
+     
+     }
+    /* ************dealsSection************* */
+    /* #content >.dealsSection{
+        width: 100%;
+        height: 210px;
+    }
+    #content >.dealsSection>.leftBox>div>.first{
+        font-size: 12px;
+        font-weight: bold;
+        margin:10px 17px;
+    }
+    #content >.dealsSection>.leftBox>div>.second{
+        margin:10px;
+    }
+    #content >.dealsSection>.leftBox>div>.third{
+        font-size: 16px;
+        margin: 10px 17px;
+    }
+    #content >.dealsSection>.leftBox>div>.forth{
+        font-size: 14px;
+        margin: 10px 17px;
+    }
+    #content >.dealsSection>.leftBox>.btn{
+        width: 170px;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 0;
+        margin: 15px 15px;
+        background:url("../img/Fleshes/flesh.png") no-repeat 100% 60%;
+        background-size: 30px;
+        box-shadow: rgb(25, 25, 25) 0px 0px 0px 0px inset;
+        transition: 0.5s;  
+    }
+    #content >.dealsSection>.leftBox>.btn:hover{
+        box-shadow: rgb(25, 25, 25) 10px 20px 20px 10px inset;
+        color: #fff;
+    }
+    #content >.dealsSection>.rightBox{
+        width: 60%;
+        border: 1px solid  transparent;
+    }
+    #content >.dealsSection>.rightBox>img{
+        height: 100%;
+        width: 100%;
+    } */
+
+
+    #content >.dealsSection{
+        width:80% ;
+        height: 110px;
+        /* margin: 40px 0; */
+        margin: 40px  auto;
+        margin-top: 20px;
+       
+     }    
+     #content >.dealsSection>.leftBox{
+        width: 100%;
+        border: 1px solid #ccc; 
+        background-color: #ccc;
+        display: block;
+        
+
+    }
+    #content >.dealsSection>.leftBox>div.leftText{
+         float: left;
+         width: 20%;
+    }
+    #content >.dealsSection>.leftBox>div.rightText{
+        float: right;
+        width:80%;
+    }
+    #content >.dealsSection>.leftBox>div>.first{
+        font-size: 12px;
+        font-weight: bold;
+        margin:10px 17px;
+        color: #fff;
+    }
+    #content >.dealsSection>.leftBox>div>.second{
+        margin: 10px;
+    }
+    #content >.dealsSection>.leftBox>div>.third{
+        font-size: 20px;
+        margin: 10px 17px;
+    }
+    #content >.dealsSection>.leftBox>div>.forth{
+        font-size: 16px;
+        margin: 10px 17px;
+        color: #fff;
+
+    }
+    #content >.dealsSection>.leftBox>.btn{
+         /* margin:10px 15px 30px 15px;  */
+        float: right; 
+        position: relative;
+        top:-20px;
+        right: 40px;
+    }
+    #content >.dealsSection>.rightBox{
+       display: none;
+    }
+
+    /* Title */
+    /* *************** */
+
+    #content>.title{
+        font-size: 15px;
+        margin:15px 0 0 8px;
+        /* margin-left: 10px; */
+    }
+    #content>.title > a.sec1{
+        font-size: 17px;
+
+    }
+    #content>.title > a.sec2{
+        font-size: 13px;
+
+    }
+    #content>.title {
+        background: url("../img/Fleshes/flesh.png")  no-repeat 33% 45%;
+        background-size: 25px;
+    }
+    #content>.title1 {
+        background: url("../img/Fleshes/flesh.png")  no-repeat 52% 45%;
+        background-size: 25px;
+    }
+
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+    /* mini */
+    #content > .mini{
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 20px;
+        /* margin-left: 10px; */
+    }
+
+    /* #content > .mini{
+        height: 220px;
+        margin-top: 20px;
+        width: 100%;
+    } */
+    #content > .mini>.leftBox{
+        padding: 5px;
+        width:90%;
+        height: 70px;
+        margin: 0 auto;
+    }
+    #content > .mini>.leftBox>.text1{
+        font-size: 1.5rem;
+        position: relative;
+        top: -7px;
+        left:7px;
+    }
+    #content > .mini>.leftBox>.text2{
+        font-size: 0.9rem;
+        margin:18px 0;
+        position: relative;
+        top: -10px;
+        left:7px;
+    }
+    #content > .mini>.leftBox>.btnShop{
+        font-size:  0.8rem;
+        text-align: left;
+        background:url("../img/Fleshes/flesh.png") no-repeat 90% 60% ;
+        background-size: 30px;
+         float: right; 
+        position: relative;
+        right:20px;
+        top:-80px;
+        width: 100px;
+        height: 20px;
+    }  
+    
+    /* category */
+    
+    /* *************************** */
+    #content >.category{
+        height: 300px; 
+        gap:2px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        /* padding-top: 15px;  */
+    } 
+    #content >.category>.itemes{
+        width:130px;
+        height: 170px;
+    }
+    #content >.category>.itemes>img{
+        width:110px;
+        height:110px; 
+    }
+    #content >.category>.itemes>.desc{
+        font-size: .700rem;
+        margin-right: 30px;
+
+    }
+    #content >.Cat1{
+        margin-top: 20px;
+     
+     }
+    /* ************dealsSection************* */
+    #content >.dealsSection{
+        width:100% ;
+        height: 120px;
+        margin: 40px 0;
+       
+     }    
+     #content >.dealsSection>.leftBox{
+        width: 100%;
+        border: 1px solid #ccc; 
+        background-color: #ccc;
+        display: block;
+
+    }
+    #content >.dealsSection>.leftBox>div.leftText{
+         float: left;
+         width: 20%;
+    }
+    #content >.dealsSection>.leftBox>div.rightText{
+        float: right;
+        width:80%;
+    }
+    #content >.dealsSection>.leftBox>div>.first{
+        font-size: 12px;
+        font-weight: bold;
+        margin:10px 17px;
+        color: #fff;
+    }
+    #content >.dealsSection>.leftBox>div>.second{
+        margin: 10px;
+    }
+    #content >.dealsSection>.leftBox>div>.third{
+        font-size: 20px;
+        margin: 10px 17px;
+    }
+    #content >.dealsSection>.leftBox>div>.forth{
+        font-size: 16px;
+        margin: 10px 17px;
+        color: #fff;
+
+    }
+    #content >.dealsSection>.leftBox>.btn{
+         /* margin:10px 15px 30px 15px;  */
+        float: right; 
+        position: relative;
+        top:-30px;
+    }
+    #content >.dealsSection>.rightBox{
+       display: none;
+    }
+
+   /* ********Title******* */
+
+    #content>.title{
+        font-size: 16px;
+        margin:40px 10px;
+        
+    }
+    #content>.title > a.sec1{
+        font-size: 17px;
+    }
+    #content>.title > a.sec2{
+        font-size: 12px;
+    }
+    #content>.title {
+        background: url("../img/Fleshes/flesh.png")  no-repeat 45% 45%;
+        background-size: 30px;
+    }
+    #content>.title1 {
+        background: url("../img/Fleshes/flesh.png")  no-repeat 68% 45%;
+        background-size: 30px;
+        margin-top:65px;
+    }
+	
+
+}
+
+
+/* *** */
+@media screen and (max-width:1200px){
+	
+
+}
+/* *** */

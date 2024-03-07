@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           #slider{
+                width:1350px ; 
+                height: 330px;
+                border: 1px solid transparent;
+                background-color:rgb(221, 11, 11);
+                cursor: pointer;
+                /* overflow: hidden;  */
+                position: relative;
+            }    
+           #slider>.gal{
+                display: flex;
+                flex-flow: row nowrap;
+                width: 400%;
+                height: 100%;
+                position: relative;
+                left:0;
+                float: left;
+            }
+           #slider>.gal>.itemes:hover{
+                border: 1px solid #333;
+            }
+           #slider>.gal>.itemes>.shoes:hover{
+                border: 1px solid #333;
+            }
+           #slider>.gal>.itemes{
+                border: 1px solid transparent;
+                width:100%;
+                height: 100%;
+                position: relative;
+            }
+           #slider>.gal>.treeItem{
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%; 
+                float: left; 
+            }
+           #slider>.gal>.itemes>.shoes>img{
+                 width: 33.33%;  
+                height: 100%;
+                border: 1px solid transparent;  
+                position: absolute;
+                left: 50%;
+
+            } 
+           #slider >.gal >.itemes> img{
+                width: 100%;
+                height: 100%;
+            }
+           #slider>.next{ 
+                position: absolute;
+                top: 50%;
+                right:10px;
+                background: url("../Ebay/img/next-prev/controls.png")no-repeat -32px 0;
+                width: 32px;
+                height:32px;
+                cursor: pointer;
+                opacity: 0.5;
+                z-index: 99;
+                background-color: #dd15d3; 
+            } 
+           #slider>.prev{ 
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                background: url("../Ebay/img/next-prev/controls.png") no-repeat 0 0;
+                width: 32px;
+                height:32px; 
+                cursor: pointer;
+                opacity: 0.5;
+                z-index: 99;
+                background-color: #eb7672;
+            }   
+           #slider>.TextOnslider{
+                width: 400px; 
+                background-color: aquamarine;
+                float: left; 
+                position: absolute;
+            }
+           #slider>.TextOnslider>.textOne{
+                color: #191919; 
+                font-size: 2.25rem;
+                font-weight: bold;
+            }
+           #slider>.TextOnslider>.textTwo{                
+                color: #191919;
+                font-size: 1.0625rem;
+            }
+           #slider>.TextOnslider>.btn{
+
+                color: rgb(25, 25, 25);
+                background-color: #fff;
+                width: 150px;
+                height: 30px;
+                border: 1px solid #333;
+                font-size:  1rem;
+                text-align: center;
+                cursor: pointer;
+                white-space:nowrap;
+                line-height:25px;
+                margin-top: 20px;;
+                background:url("../img/Fleshes/flesh.png") no-repeat 100% 60%;
+                
+            }
+            #slider>.play{ 
+                background-color: gold;
+                position: absolute;
+                right: 20px;
+                bottom:20px
+            }
+            #slider>.play>img{ 
+                width: 30px;
+                height: 30px; 
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="slider">
+            <div class="TextOnslider">
+                <div class="textOne">Add alittle heat <br> to your rotation</div>
+                <div class="textTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="btn">Grab a pair</div>
+            </div>
+            <div id="gal" class="gal">
+                 <div class="itemes  treeItem">
+                    <div class="shoes "><img src="img/sliderShoes/1.webp"></div>
+                    <div class="shoes "><img src="img/sliderShoes/2.webp"></div>
+                    <div class="shoes "><img src="img/sliderShoes/3.webp"></div>
+                </div> 
+                <div class="itemes "><img src="img/sliderShoes/s-l90.webp"></div>
+                <div class="itemes "><img src="img/sliderShoes/s-l960 (1).webp"></div>
+                <div class="itemes "><img src="img/sliderShoes/s-l960.webp"></div>               
+            </div>
+            <div id="play" class="play"><img src="img/icons/play.png"></div>
+            <div id="next" class="next"></div>
+            <div id="prev" class="prev"></div>  
+        </div>
+
+        <script>
+
+
+            play(2000);
+            slider.onmouseover = function(){pause()};
+            slider.onmouseout = function(){play(3000)};
+
+
+            var pos=0;
+    
+             var s;
+             function play(playSpeed){
+            s = setInterval("go_right()",playSpeed);
+             }
+
+            function pause(){
+                clearInterval(s)
+            }
+
+            next.onclick = go_right;
+            prev.onclick = go_left;
+
+            function go_right(){
+                if(pos > -300){
+                    pos = pos - 100;
+                    gal.style.left = pos +"%";
+                }
+                else if(pos == -300){
+                    pos = 0;
+                    gal.style.left= pos +"%";
+                }
+            }
+           
+            function  go_left(){
+                if(pos < 0){
+                    pos = pos + 100;
+                    gal.style.left = pos +"%";
+                }
+                else if(pos == 0){
+                    pos = -300;
+                    gal.style.left = pos + "%";	
+                }
+            }
+        </script>
+    </body>
+</html>

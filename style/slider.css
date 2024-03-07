@@ -1,0 +1,314 @@
+
+#content > #slider{
+    width:1340px ; 
+    height: 330px;
+    border: 1px solid transparent;
+    background-color:rgb(247, 247, 247,0);
+    cursor: pointer;
+    overflow: hidden; 
+    position: relative;
+
+}    
+#content > #slider >.gal{
+    width:70%;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    left:0;
+
+}
+#content > #slider>.gal>.itemes>img:hover{
+    border: 1px solid #333;
+}
+#content >#slider>.gal>.itemes>.shoes>img:hover{
+    border: 1px solid #333;
+}
+#content > #slider>.gal>.itemes{
+    /* border: 1px solid transparent; */
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+#content > #slider>.gal>.treeItem{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%; 
+    height: 100%;
+    /* float: left;  */
+    /* position: relative;
+    left:3%;   */
+}
+#content > #slider>.gal>.itemes>.shoes{
+    width:40%;
+    height:100%;
+    /* border: 1px solid transparent;   */
+}
+#content > #slider>.gal>.itemes>.shoes>img{
+    width:100%;
+    height: 100%;
+    border: 1px solid transparent;
+     /* margin-left:5px;           */
+} 
+#content > #slider >.gal >.hovit> img{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+}
+#content > #slider >.gal >.itemes> img{
+    /* border: 1px solid transparent; */
+    width: 100%;
+    height: 100%;
+}
+#content > #slider>.next:hover{   opacity: 1;}
+#content > #slider>.prev:hover{   opacity: 1;}
+#content > #slider>.next{ 
+    position: absolute;
+    top: 50%;
+    right:10px;
+    background: url("../img/next-prev/controls.png")no-repeat -32px 0;
+    width: 32px;
+    height:32px;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 99;
+    background-color: #7e6969; 
+} 
+#content > #slider>.prev{ 
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background: url("../img/next-prev/controls.png") no-repeat 0 0;
+    width: 32px;
+    height:32px; 
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 99;
+    background-color: #7e6969; 
+}   
+#content > #slider>.TextOnslider{
+    /* width: 400px;  */
+    width: 30%;
+    float: left;
+    
+    background-color:rgba(235, 232, 232, 0);
+    position: absolute;
+    z-index: 10;
+    padding-left: 5px;
+}
+#content > #slider>.TextOnslider>.textOne{
+    color: #191919; 
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+#content > #slider>.TextOnslider>.textTwo{                
+    color: #191919;
+    font-size: 1.0625rem;   
+}
+#content > #slider>.TextOnslider>.btn{
+    color: rgb(25, 25, 25);
+    background-color: #fff;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #333;
+    font-size:  1rem;
+    text-align: center;
+    cursor: pointer;
+    white-space:nowrap;
+    line-height:25px;
+    margin-top: 20px;
+    background:url("../img/Fleshes/flesh.png") no-repeat 100% 60%;
+    background-size: 40px;
+
+    box-shadow: rgb(25, 25, 25) 0px 0px 0px 0px inset;
+    transition: 0.5s;    
+}
+#content > #slider>.TextOnslider>.btn:hover{
+    box-shadow: rgb(25, 25, 25) 10px 20px 20px 10px inset;
+    color: #fff;
+    background-color: #fff;
+}
+#content > #slider >.playBtn{ 
+    background-color:#bbbbbb; 
+    border-radius: 100%;
+    background: url(../img/icons/play2.png)  no-repeat;
+    width:45px;
+    height: 45px; 
+    position: absolute;
+    right:10px;
+    bottom:5px;
+    background-size: 80%;
+}
+#content > #slider >.pauseBtn{ 
+
+    background-color:rgba(146, 139, 139, 0.5); 
+    border-radius: 100%;
+    background: url(../img/icons/pause2.png) no-repeat;
+    width: 45px;
+    height: 45px; 
+    position: absolute;
+    right: 10px;
+    bottom:5px;
+    background-size: 80%;
+}
+
+/* ****************** Responsive  ******************** */
+
+
+@media screen and (max-width:1000px){
+    
+    #content > #slider{
+        width: 1000px; 
+    }    
+
+    #content > #slider>.gal>.itemes:hover{
+        border: 1px solid #333;
+    }
+    #content >#slider>.gal>.itemes>.shoes:hover{
+        border: 1px solid #333;
+    }
+    #content > #slider>.TextOnslider{
+       margin-left: 15px;
+       margin-top:15px;
+    }
+    #content > #slider>.TextOnslider>.textOne{
+        font-size: 1.9rem;
+
+    }
+    #content > #slider>.TextOnslider>.textTwo{             
+        font-size: 1rem;   
+    }
+    #content > #slider>.TextOnslider>.btn{
+        width: 120px;
+        font-size:  0.9rem;
+        text-align: left;
+        background:url("../img/Fleshes/flesh.png") no-repeat 98% 60%;
+        background-size: 35px;
+  
+    }
+    #content > #slider >.playBtn{ 
+        width: 40px;
+        height: 40px; 
+        position: absolute;
+        right:10px;
+        bottom:5px;
+    }
+    #content > #slider >.pauseBtn{ 
+        width:40px;
+        height: 40px; 
+        position: absolute;
+        right: 10px;
+        bottom:5px;
+    } 
+	
+
+}
+/* *** */
+@media screen and (max-width:800px){
+	
+
+    #content > #slider{
+        width: 800px; 
+    }    
+
+    #content > #slider>.gal>.itemes:hover{
+        border: 1px solid #333;
+    }
+    #content >#slider>.gal>.itemes>.shoes:hover{
+        border: 1px solid #333;
+    }
+    #content > #slider>.TextOnslider{
+       margin-left: 15px;
+       margin-top:15px;
+    }
+    #content > #slider>.TextOnslider>.textOne{
+        font-size: 1.9rem;
+
+    }
+    #content > #slider>.TextOnslider>.textTwo{             
+        font-size: 1rem;   
+    }
+    #content > #slider>.TextOnslider>.btn{
+        width: 120px;
+        font-size:  0.9rem;
+        text-align: left;
+        background:url("../img/Fleshes/flesh.png") no-repeat 98% 60%;
+        background-size: 35px;
+  
+    }
+    #content > #slider >.playBtn{ 
+        width: 35px;
+        height: 35px; 
+        position: absolute;
+        right:10px;
+        bottom:5px;
+    }
+    #content > #slider >.pauseBtn{ 
+        width:35px;
+        height: 35px; 
+        position: absolute;
+        right: 10px;
+        bottom:5px;
+    } 	    
+}
+/* *** */
+@media screen and (max-width:600px){
+    
+    #content > #slider{
+        width: 600px;
+        height: 240px; 
+    }    
+
+    #content > #slider>.gal>.itemes:hover{
+        border: 1px solid #333;
+    }
+    #content >#slider>.gal>.itemes>.shoes:hover{
+        border: 1px solid #333;
+    }
+    #content > #slider>.TextOnslider{
+       /* margin-left: 15px;
+       margin-top:15px; */
+       display: none;
+    }
+    /* #content > #slider>.TextOnslider>.textOne{
+        font-size: 1.9rem;
+
+    }
+    #content > #slider>.TextOnslider>.textTwo{             
+        font-size: 1rem;   
+    }
+    #content > #slider>.TextOnslider>.btn{
+        width: 120px;
+        font-size:  0.9rem;
+        text-align: left;
+        background:url("../img/Fleshes/flesh.png") no-repeat 98% 60%;
+        background-size: 35px;
+  
+    } */
+	
+    #content > #slider >.playBtn{ 
+        width: 30px;
+        height:30px; 
+        position: absolute;
+        right:10px;
+        bottom:5px;
+    }
+    #content > #slider >.pauseBtn{ 
+        width:30px;
+        height: 30px; 
+        position: absolute;
+        right: 10px;
+        bottom:5px;
+    } 
+	
+    
+
+}
+/* *** */
+@media screen and (max-width:1200px){
+	
+
+}
+/* *** */
